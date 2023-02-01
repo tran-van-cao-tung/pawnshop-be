@@ -1,4 +1,5 @@
 ﻿using PawnShop.Application.Common.Interfaces.Authentication;
+using PawnShop.Application.Common.Interfaces.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,12 @@ namespace PawnShop.Application.Services.Authentication
 
         private readonly IJwtTokenGenerator _jwtTokenGenerator;
 
-        public AuthenticationService(IJwtTokenGenerator jwtTokenGenerator)
+        private readonly IUserRepository _userRepository;
+
+        public AuthenticationService(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository)
         {
             _jwtTokenGenerator = jwtTokenGenerator;
+            _userRepository = userRepository;   
         }
 
         
@@ -24,9 +28,9 @@ namespace PawnShop.Application.Services.Authentication
         
         public AuthenticationResult Register(string firstName, string lastName, string email, string password)
 
-        // check if user already exists
+        // 1. Validate the user doesn't exist
 
-        // create user (generate unique ID)
+        // 2. create user (generate unique ID)
 
         // create JWT token
 
