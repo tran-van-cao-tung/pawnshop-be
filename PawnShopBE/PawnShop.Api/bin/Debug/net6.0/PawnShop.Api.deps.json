@@ -148,6 +148,9 @@
         }
       },
       "PawnShop.Contracts/1.0.0": {
+        "dependencies": {
+          "PawnShop.Domain": "1.0.0"
+        },
         "runtime": {
           "PawnShop.Contracts.dll": {}
         }

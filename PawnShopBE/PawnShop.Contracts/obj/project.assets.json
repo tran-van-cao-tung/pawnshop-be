@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "PawnShop.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PawnShop.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PawnShop.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PawnShop.Domain/1.0.0": {
+      "type": "project",
+      "path": "../PawnShop.Domain/PawnShop.Domain.csproj",
+      "msbuildProject": "../PawnShop.Domain/PawnShop.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "PawnShop.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Admin\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShop.Domain\\PawnShop.Domain.csproj": {
+              "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShop.Domain\\PawnShop.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

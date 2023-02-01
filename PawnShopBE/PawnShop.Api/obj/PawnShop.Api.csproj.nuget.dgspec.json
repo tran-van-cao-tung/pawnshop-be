@@ -178,7 +178,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShop.Domain\\PawnShop.Domain.csproj": {
+                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShop.Domain\\PawnShop.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

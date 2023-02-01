@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PawnShop.Contracts.Authentication
+namespace PawnShop.Domain.Enums
 {
-    public record LoginRequest(
-        string Email,
-        string Password);
+    public enum UserStatus
+    {
+        Inactive = 0,
+        Active = 1
+    }
 }

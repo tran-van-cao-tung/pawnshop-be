@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PawnShop.Domain\PawnShop.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

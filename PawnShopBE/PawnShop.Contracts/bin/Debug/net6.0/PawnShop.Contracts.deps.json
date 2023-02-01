@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "PawnShop.Contracts/1.0.0": {
+        "dependencies": {
+          "PawnShop.Domain": "1.0.0"
+        },
         "runtime": {
           "PawnShop.Contracts.dll": {}
+        }
+      },
+      "PawnShop.Domain/1.0.0": {
+        "runtime": {
+          "PawnShop.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "PawnShop.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PawnShop.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

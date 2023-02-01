@@ -11,5 +11,7 @@ namespace PawnShop.Application.Common.Interfaces.Persistence
     {
         User? GetUserByEmail(string email);
         void Add(User user);
+
+        User? GetUserByUserName(string userName);
     }
 }

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace PawnShop.Contracts.Authentication
 {
-    //internal class RegisterRequest
-    //{
-    //}
-
     public record RegisterRequest(
-        string FirstName,
-        string LastName,
+        int BranchId,
+        string UserName,
+        string Password,
+        string FullName,
         string Email,
-        string Password);
+        DateTime Dob,
+        string Address,
+        int Phone);
 }
