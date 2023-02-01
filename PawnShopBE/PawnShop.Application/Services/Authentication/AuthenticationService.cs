@@ -39,7 +39,7 @@ namespace PawnShop.Application.Services.Authentication
         }
 
         public AuthenticationResult Login(string email, string password)
-        {
+        {         
             return new AuthenticationResult(Guid.NewGuid(),"firstName", "lastName", email, "token");
         }
     }
