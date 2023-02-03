@@ -6,10 +6,6 @@ using System.Threading.Tasks;
 
 namespace PawnShop.Contracts.Authentication
 {
-    //internal class LoginRequest
-    //{
-    //}
-
     public record LoginRequest(
         string Email,
         string Password);

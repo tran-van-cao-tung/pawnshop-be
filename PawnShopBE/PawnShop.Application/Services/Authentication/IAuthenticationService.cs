@@ -8,8 +8,8 @@ namespace PawnShop.Application.Services.Authentication
 {
     public interface IAuthenticationService
     {
-        AuthenticationResult Register(string firstName, string lastName, string email, string password);
-        AuthenticationResult Login(string email, string password);
+        AuthenticationResult Register(int branchId, string userName, string password, string fullName, string email, DateTime dob, string address, int phone);
+        AuthenticationResult Login(string userName, string password);
 
     }
 }

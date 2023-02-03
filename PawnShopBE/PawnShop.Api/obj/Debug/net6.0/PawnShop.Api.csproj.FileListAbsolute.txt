@@ -5,6 +5,7 @@ F:\pawnshop\pawnshop-be\PawnShopBE\PawnShop.Api\bin\Debug\net6.0\PawnShop.Api.de
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShop.Api\bin\Debug\net6.0\PawnShop.Api.runtimeconfig.json
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShop.Api\bin\Debug\net6.0\PawnShop.Api.dll
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShop.Api\bin\Debug\net6.0\PawnShop.Api.pdb
+F:\pawnshop\pawnshop-be\PawnShopBE\PawnShop.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShop.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShop.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShop.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll

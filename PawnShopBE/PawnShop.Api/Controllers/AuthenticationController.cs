@@ -1,13 +1,18 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using PawnShop.Api.Filters;
 using PawnShop.Application.Services.Authentication;
 using PawnShop.Contracts.Authentication;
+using PawnShop.Domain.Entities;
+using System.Net;
+using System.Numerics;
 using IAuthenticationService = PawnShop.Application.Services.Authentication.IAuthenticationService;
 
 namespace PawnShop.Api.Controllers
 {
     [ApiController]
     [Route("auth")]
+    [ErrorHandlingFilter]
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationService _authenticationService;
@@ -20,8 +25,9 @@ namespace PawnShop.Api.Controllers
         [HttpPost("register")]
         public IActionResult Register(RegisterRequest request)
         {
-            var authResult = _authenticationService.Register(request.FirstName, request.LastName, request.Email, request.Password);
-            var response = new AuthenticationResponse(authResult.Id, authResult.FirstName, authResult.LastName, authResult.Email, authResult.Token);
+            
+            var authResult = _authenticationService.Register(request.BranchId, request.UserName, request.Password, request.FullName, request.Email, request.Dob, request.Address, request.Phone);
+            var response = new AuthenticationResponse(authResult.User,authResult.Token);
             return Ok(response);
         }
 
@@ -29,7 +35,7 @@ namespace PawnShop.Api.Controllers
         public IActionResult Login(LoginRequest request)
         {
             var authResult = _authenticationService.Login(request.Email, request.Password);
-            var response = new AuthenticationResponse(authResult.Id, authResult.FirstName, authResult.LastName, authResult.Email, authResult.Token);
+            var response = new AuthenticationResponse(authResult.User, authResult.Token);
             return Ok(response);
         }
 

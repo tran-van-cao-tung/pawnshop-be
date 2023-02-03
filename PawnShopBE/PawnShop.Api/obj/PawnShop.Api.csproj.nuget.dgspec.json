@@ -53,6 +53,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -172,7 +178,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShop.Domain\\PawnShop.Domain.csproj": {
+                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShop.Domain\\PawnShop.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -307,6 +317,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.26.0, )"
