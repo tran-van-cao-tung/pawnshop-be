@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using PawnShop.Api.Filters;
 using PawnShop.Application.Services.Authentication;
 using PawnShop.Contracts.Authentication;
 using PawnShop.Domain.Entities;
@@ -11,6 +12,7 @@ namespace PawnShop.Api.Controllers
 {
     [ApiController]
     [Route("auth")]
+    [ErrorHandlingFilter]
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationService _authenticationService;
