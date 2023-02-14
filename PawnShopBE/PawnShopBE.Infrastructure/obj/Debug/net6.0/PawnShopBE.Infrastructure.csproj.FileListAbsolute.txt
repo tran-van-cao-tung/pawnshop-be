@@ -1,0 +1,17 @@
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\bin\Debug\net6.0\PawnShopBE.Infrastructure.deps.json
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\bin\Debug\net6.0\PawnShopBE.Infrastructure.runtimeconfig.json
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\bin\Debug\net6.0\PawnShopBE.Infrastructure.dll
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\bin\Debug\net6.0\PawnShopBE.Infrastructure.pdb
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\bin\Debug\net6.0\PawnShopBE.Core.dll
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\bin\Debug\net6.0\PawnShopBE.Core.pdb
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\PawnShopBE.Infrastructure.csproj.AssemblyReference.cache
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\PawnShopBE.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\PawnShopBE.Infrastructure.AssemblyInfoInputs.cache
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\PawnShopBE.Infrastructure.AssemblyInfo.cs
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\PawnShopBE.Infrastructure.csproj.CoreCompileInputs.cache
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\PawnShopBE.Infrastructure.csproj.CopyComplete
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\PawnShopBE.Infrastructure.dll
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\refint\PawnShopBE.Infrastructure.dll
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\PawnShopBE.Infrastructure.pdb
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\PawnShopBE.Infrastructure.genruntimeconfig.cache
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Infrastructure\obj\Debug\net6.0\ref\PawnShopBE.Infrastructure.dll

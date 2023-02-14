@@ -1,0 +1,17 @@
+F:\STUDY\PawnShop\PawnShopBE\Services\bin\Debug\net6.0\Services.deps.json
+F:\STUDY\PawnShop\PawnShopBE\Services\bin\Debug\net6.0\Services.dll
+F:\STUDY\PawnShop\PawnShopBE\Services\bin\Debug\net6.0\Services.pdb
+F:\STUDY\PawnShop\PawnShopBE\Services\bin\Debug\net6.0\PawnShopBE.Core.dll
+F:\STUDY\PawnShop\PawnShopBE\Services\bin\Debug\net6.0\PawnShopBE.Infrastructure.dll
+F:\STUDY\PawnShop\PawnShopBE\Services\bin\Debug\net6.0\PawnShopBE.Core.pdb
+F:\STUDY\PawnShop\PawnShopBE\Services\bin\Debug\net6.0\PawnShopBE.Infrastructure.pdb
+F:\STUDY\PawnShop\PawnShopBE\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
+F:\STUDY\PawnShop\PawnShopBE\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+F:\STUDY\PawnShop\PawnShopBE\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.cache
+F:\STUDY\PawnShop\PawnShopBE\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
+F:\STUDY\PawnShop\PawnShopBE\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
+F:\STUDY\PawnShop\PawnShopBE\Services\obj\Debug\net6.0\Services.csproj.CopyComplete
+F:\STUDY\PawnShop\PawnShopBE\Services\obj\Debug\net6.0\Services.dll
+F:\STUDY\PawnShop\PawnShopBE\Services\obj\Debug\net6.0\refint\Services.dll
+F:\STUDY\PawnShop\PawnShopBE\Services\obj\Debug\net6.0\Services.pdb
+F:\STUDY\PawnShop\PawnShopBE\Services\obj\Debug\net6.0\ref\Services.dll

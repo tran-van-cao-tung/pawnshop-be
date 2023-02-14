@@ -1,0 +1,12 @@
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\bin\Debug\net6.0\PawnShopBE.Core.deps.json
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\bin\Debug\net6.0\PawnShopBE.Core.dll
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\bin\Debug\net6.0\PawnShopBE.Core.pdb
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\obj\Debug\net6.0\PawnShopBE.Core.csproj.AssemblyReference.cache
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\obj\Debug\net6.0\PawnShopBE.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\obj\Debug\net6.0\PawnShopBE.Core.AssemblyInfoInputs.cache
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\obj\Debug\net6.0\PawnShopBE.Core.AssemblyInfo.cs
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\obj\Debug\net6.0\PawnShopBE.Core.csproj.CoreCompileInputs.cache
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\obj\Debug\net6.0\PawnShopBE.Core.dll
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\obj\Debug\net6.0\refint\PawnShopBE.Core.dll
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\obj\Debug\net6.0\PawnShopBE.Core.pdb
+F:\STUDY\PawnShop\PawnShopBE\PawnShopBE.Core\obj\Debug\net6.0\ref\PawnShopBE.Core.dll
