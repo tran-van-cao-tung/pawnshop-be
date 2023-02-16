@@ -1,12 +1,13 @@
 ﻿using PawnShopBE.Core.Interfaces;
 using PawnShopBE.Core.Models;
+using Services.Services.IServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Services
+namespace Services.Services
 {
     public class UserService : IUserService
     {
@@ -18,8 +19,9 @@ namespace Services
         }
         public async Task<bool> CreateUser(User user)
         {
-            if (user   != null)
+            if (user != null)
             {
+                user.CreateTime = DateTime.Now;
                 await _unitOfWork.Users.Add(user);
 
                 var result = _unitOfWork.Save();
@@ -74,11 +76,11 @@ namespace Services
         {
             if (user != null)
             {
-                var userUpdate = await _unitOfWork.Users.GetById(user.userId);
+                var userUpdate = await _unitOfWork.Users.GetById(user.UserId);
                 if (userUpdate != null)
                 {
-                    userUpdate.userName = user.userName;
-               
+                    userUpdate.UserName = user.UserName;
+                    userUpdate.UpdateTime = DateTime.Now;
                     _unitOfWork.Users.Update(userUpdate);
 
                     var result = _unitOfWork.Save();

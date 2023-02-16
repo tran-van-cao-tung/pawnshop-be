@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE\\PawnShopBE.csproj": {}
+    "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE\\PawnShopBE.csproj": {}
   },
   "projects": {
-    "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
+    "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
+        "projectUniqueName": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
         "projectName": "PawnShopBE.Core",
-        "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
+        "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\obj\\",
+        "outputPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj": {
+    "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj",
+        "projectUniqueName": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj",
         "projectName": "PawnShopBE.Infrastructure",
-        "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj",
+        "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Infrastructure\\obj\\",
+        "outputPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
-                "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj"
+              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
+                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj"
               }
             }
           }
@@ -152,14 +152,14 @@
         }
       }
     },
-    "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE\\PawnShopBE.csproj": {
+    "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE\\PawnShopBE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE\\PawnShopBE.csproj",
+        "projectUniqueName": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE\\PawnShopBE.csproj",
         "projectName": "PawnShopBE",
-        "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE\\PawnShopBE.csproj",
+        "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE\\PawnShopBE.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE\\obj\\",
+        "outputPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -180,14 +180,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
-                "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj"
+              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
+                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj"
               },
-              "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj": {
-                "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj"
+              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj": {
+                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj"
               },
-              "F:\\STUDY\\PawnShop\\PawnShopBE\\Services\\Services.csproj": {
-                "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\Services\\Services.csproj"
+              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj": {
+                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj"
               }
             }
           }
@@ -202,6 +202,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -230,14 +234,14 @@
         }
       }
     },
-    "F:\\STUDY\\PawnShop\\PawnShopBE\\Services\\Services.csproj": {
+    "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\STUDY\\PawnShop\\PawnShopBE\\Services\\Services.csproj",
+        "projectUniqueName": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\Services\\Services.csproj",
+        "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\Services\\obj\\",
+        "outputPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -258,11 +262,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
-                "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj"
+              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
+                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj"
               },
-              "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj": {
-                "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj"
+              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj": {
+                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj"
               }
             }
           }

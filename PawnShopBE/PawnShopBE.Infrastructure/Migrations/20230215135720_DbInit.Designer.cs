@@ -12,7 +12,7 @@ using PawnShopBE.Infrastructure.Helpers;
 namespace PawnShopBE.Infrastructure.Migrations
 {
     [DbContext(typeof(DbContextClass))]
-    [Migration("20230214021544_DbInit")]
+    [Migration("20230215135720_DbInit")]
     partial class DbInit
     {
         /// <inheritdoc />
@@ -27,138 +27,138 @@ namespace PawnShopBE.Infrastructure.Migrations
 
             modelBuilder.Entity("PawnShopBE.Core.Models.Branch", b =>
                 {
-                    b.Property<Guid>("branchId")
+                    b.Property<int>("BranchId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("branchName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("createDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("fund")
                         .HasColumnType("int");
 
-                    b.Property<string>("phoneNumber")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BranchId"));
+
+                    b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte>("status")
-                        .HasColumnType("tinyint");
+                    b.Property<string>("BranchName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("updateDate")
+                    b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("branchId");
+                    b.Property<int>("Fund")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("BranchId");
 
                     b.ToTable("Branch");
                 });
 
             modelBuilder.Entity("PawnShopBE.Core.Models.Role", b =>
                 {
-                    b.Property<Guid>("roleId")
+                    b.Property<int>("RoleId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
 
-                    b.Property<string>("roleName")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleId"));
+
+                    b.Property<string>("RoleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("roleId");
+                    b.HasKey("RoleId");
 
                     b.ToTable("Role");
                 });
 
             modelBuilder.Entity("PawnShopBE.Core.Models.User", b =>
                 {
-                    b.Property<Guid>("userId")
+                    b.Property<Guid>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("RoleId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("address")
+                    b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("branchId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int?>("BranchId")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("createTime")
+                    b.Property<DateTime>("CreateTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("dob")
+                    b.Property<DateTime>("Dob")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("email")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("fullName")
+                    b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("password")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("phone")
+                    b.Property<string>("Phone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte>("status")
-                        .HasColumnType("tinyint");
+                    b.Property<int?>("RoleId")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime?>("updateTime")
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdateTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("userName")
+                    b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("userId");
+                    b.HasKey("UserId");
+
+                    b.HasIndex("BranchId");
 
                     b.HasIndex("RoleId");
 
-                    b.HasIndex("branchId");
-
-                    b.ToTable("User");
+                    b.ToTable("User", (string)null);
                 });
 
             modelBuilder.Entity("PawnShopBE.Core.Models.User", b =>
                 {
-                    b.HasOne("PawnShopBE.Core.Models.Role", "role")
-                        .WithMany("users")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("PawnShopBE.Core.Models.Branch", "Branch")
+                        .WithMany("Users")
+                        .HasForeignKey("BranchId");
 
-                    b.HasOne("PawnShopBE.Core.Models.Branch", "branch")
-                        .WithMany("users")
-                        .HasForeignKey("branchId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("PawnShopBE.Core.Models.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId");
 
-                    b.Navigation("branch");
+                    b.Navigation("Branch");
 
-                    b.Navigation("role");
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("PawnShopBE.Core.Models.Branch", b =>
                 {
-                    b.Navigation("users");
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("PawnShopBE.Core.Models.Role", b =>
                 {
-                    b.Navigation("users");
+                    b.Navigation("Users");
                 });
 #pragma warning restore 612, 618
         }

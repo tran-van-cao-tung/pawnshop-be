@@ -13,13 +13,23 @@ namespace PawnShopBE.Infrastructure.Repositories
         private readonly DbContextClass _dbContext;
         public IUserRepository Users { get; }
 
-        public UnitOfWork(DbContextClass dbContext,
-                            IUserRepository userRepository)
+        public IBranchRepository Branches { get; }
+
+        public IRoleRepository Roles { get; }
+
+        public UnitOfWork(  DbContextClass dbContext,
+                            IUserRepository userRepository, 
+                            IBranchRepository branchRepository,
+                            IRoleRepository roleRepository)
         {
             _dbContext = dbContext;
             Users = userRepository;
+            Branches = branchRepository;
+            Roles = roleRepository;
+
         }
 
+     
         public int Save()
         {
             return _dbContext.SaveChanges();

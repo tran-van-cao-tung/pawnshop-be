@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w7377QYS8flePxTM8PQRR2+xmZR+1BsESYGhYxMAH3soZm/Kns4FgIwb06FmcahCcZBxn2Akjnvcti2ilDvIjw==",
+  "dgSpecHash": "ovQfGFCFIe5E7JDM7rXIAKoKhIVEw34IkMhzO99dlxoO6FKA/3GRjv6OHm5Dk2bccSoGIyi+Y5ibK0Nt6Q5qrg==",
   "success": true,
-  "projectFilePath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
+  "projectFilePath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

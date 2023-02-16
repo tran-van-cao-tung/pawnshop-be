@@ -22,7 +22,8 @@ namespace PawnShopBE.Infrastructure.ServiceExtension
             });
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUserRepository, UserRepository>();
-
+            services.AddScoped<IBranchRepository, BranchRepository>();
+            services.AddScoped<IRoleRepository,RoleRepository>();
             return services;
         }
     }
