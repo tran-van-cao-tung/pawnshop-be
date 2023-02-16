@@ -42,5 +42,10 @@ namespace PawnShopBE.Infrastructure.Repositories
         {
             _dbContext.Set<T>().Update(entity);
         }
+
+        public async Task<T> GetById(int id)
+        {
+            return await _dbContext.Set<T>().FindAsync(id);
+        }
     }
 }

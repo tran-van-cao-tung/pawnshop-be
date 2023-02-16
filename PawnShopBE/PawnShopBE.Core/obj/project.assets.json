@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
+      "projectUniqueName": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
       "projectName": "PawnShopBE.Core",
-      "projectPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
+      "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\STUDY\\PawnShop\\PawnShopBE\\PawnShopBE.Core\\obj\\",
+      "outputPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

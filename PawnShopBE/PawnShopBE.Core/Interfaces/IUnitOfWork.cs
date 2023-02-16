@@ -9,7 +9,8 @@ namespace PawnShopBE.Core.Interfaces
     public interface IUnitOfWork : IDisposable
     {
         IUserRepository Users { get; }
-
+        IBranchRepository Branches { get; }
+        IRoleRepository Roles { get; }
         int Save();
     }
 }

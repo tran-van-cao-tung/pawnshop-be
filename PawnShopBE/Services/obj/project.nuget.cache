@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TLM7DZAaie+GwaI5Fxa3zTTjrKWZDaPqVwa7nnyKsCVgR02Qp0KA55fcDzhL97PXx4UGxO/eaLds0PVk8KUOXg==",
+  "dgSpecHash": "kDhMpcJvP8H+bbwvKxXwRtmsgM2Xc5Vn2DLFKizHhEktTnjqy8Ix/rfxGlM677FaaDE/efA+i5YaL9N6qrW5Mg==",
   "success": true,
-  "projectFilePath": "F:\\STUDY\\PawnShop\\PawnShopBE\\Services\\Services.csproj",
+  "projectFilePath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
