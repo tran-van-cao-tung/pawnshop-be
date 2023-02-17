@@ -10,12 +10,13 @@ namespace PawnShopBE.Infrastructure.Helpers
 {
     public class DbContextClass : DbContext
     {
-        public DbContextClass(DbContextOptions<DbContextClass> options) : base(options)
+        public DbContextClass(DbContextOptions options) : base(options)
         {
 
         }
         #region DbSet
         public DbSet<User>? User { get; set; }
+        public DbSet<RefeshToken>? RefeshToken { get; set;}
         #endregion
     }
 }

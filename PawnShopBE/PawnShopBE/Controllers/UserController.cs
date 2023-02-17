@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PawnShopBE.Core;
+using PawnShopBE.Core.Data;
 using PawnShopBE.Core.Models;
 using Services;
 
@@ -17,8 +20,10 @@ namespace PawnShopBE.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> CreateUser(User user)
         {
+            user.userId=Guid.NewGuid();
             var isUser = await _userService.CreateUser(user);
 
             if (isUser)
@@ -54,7 +59,7 @@ namespace PawnShopBE.Controllers
 
             if (user != null)
             {
-                return Ok(User);
+                return Ok(user);
             }
             else
             {
@@ -80,7 +85,7 @@ namespace PawnShopBE.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete]//("{id}")]
         public async Task<IActionResult> DeleteUser(Guid userId)
         {
             var isUserCreated = await _userService.DeleteUser(userId);
@@ -94,6 +99,6 @@ namespace PawnShopBE.Controllers
                 return BadRequest();
             }
         }
-    
-}
+
+    }
 }
