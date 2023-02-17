@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using PawnShopBE.Core;
-using PawnShopBE.Core.Data;
+using PawnShopBE.Core.DTOs;
 using PawnShopBE.Core.Models;
-using Services;
+using Services.Services.IServices;
 
 namespace PawnShopBE.Controllers
 {
@@ -12,23 +11,23 @@ namespace PawnShopBE.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        public readonly IUserService _userService;
-
-        public UserController(IUserService userService)
+        private readonly IUserService _userService;
+        private readonly IMapper _mapper;
+        public UserController(IUserService userService, IMapper mapper)
         {
             _userService = userService;
+            _mapper = mapper;
         }
 
-        [HttpPost]
-        [Authorize]
-        public async Task<IActionResult> CreateUser(User user)
+        [HttpPost("user")]
+        public async Task<IActionResult> CreateUser(UserDTO request)
         {
-            user.userId=Guid.NewGuid();
-            var isUser = await _userService.CreateUser(user);
+            var user = _mapper.Map<User>(request);
+            var response = await _userService.CreateUser(user);
 
-            if (isUser)
+            if (response)
             {
-                return Ok(isUser);
+                return Ok(response);
             }
             else
             {
@@ -36,7 +35,7 @@ namespace PawnShopBE.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("users")]
         public async Task<IActionResult> getUserList()
         {
             var userList = await _userService.GetAllUsers();
@@ -47,12 +46,7 @@ namespace PawnShopBE.Controllers
             return Ok(userList);
         }
 
-        /// <summary>
-        /// Get product by id
-        /// </summary>
-        /// <param name="productId"></param>
-        /// <returns></returns>
-        [HttpGet("{id}")]
+        [HttpGet("user/{id:guid}")]
         public async Task<IActionResult> GetUserById(Guid userId)
         {
             var user = await _userService.GetUserById(userId);
@@ -67,15 +61,17 @@ namespace PawnShopBE.Controllers
             }
         }
 
-        [HttpPut]
-        public async Task<IActionResult> UpdateUser(User user)
+        [HttpPut("user/{id:guid}")]
+        public async Task<IActionResult> UpdateUser(Guid id, UserDTO request)
         {
-            if (user != null)
+            if (request != null)
             {
-                var isUserCreated = await _userService.UpdateUser(user);
-                if (isUserCreated)
+                request.UserId = id;
+                var user = _mapper.Map<User>(request);
+                var response = await _userService.UpdateUser(user);
+                if (response)
                 {
-                    return Ok(isUserCreated);
+                    return Ok(response);
                 }
                 return BadRequest();
             }
@@ -85,7 +81,7 @@ namespace PawnShopBE.Controllers
             }
         }
 
-        [HttpDelete]//("{id}")]
+        [HttpDelete("user/{id:guid}")]
         public async Task<IActionResult> DeleteUser(Guid userId)
         {
             var isUserCreated = await _userService.DeleteUser(userId);
@@ -99,6 +95,6 @@ namespace PawnShopBE.Controllers
                 return BadRequest();
             }
         }
-
+    
     }
 }

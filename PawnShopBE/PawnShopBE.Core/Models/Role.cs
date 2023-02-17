@@ -8,13 +8,16 @@ using System.Threading.Tasks;
 
 namespace PawnShopBE.Core.Models
 {
-    [Table("Role")]
     public class Role
     {
-        [Key]
-        public Guid roleId { get; set; }
-        public string roleName { get; set; }
+        public int RoleId { get; set; }
+        public string RoleName { get; set; }
 
-        public ICollection<User> users { get; set; }
+        public ICollection<User>? Users { get; set; }
+
+        public Role()
+        {
+            Users = new List<User>();
+        }
     }
 }

@@ -9,26 +9,30 @@ using System.Threading.Tasks;
 
 namespace PawnShopBE.Core.Models
 {
-    [Table("User")]
     public class User
     {
-        [Key]
-        public Guid userId { get; set; }
-        public string userName { get; set; }
-        public string password { get; set; }
-        public string email { get; set; }
-        public string fullName { get; set; }
-        public DateTime dob { get; set; }
-        public string address { get; set; }
-        public string phone { get; set; }
-        public DateTime createTime { get; set; }
-        public DateTime? updateTime { get; set; }
-        //public byte status { get; set; }
+        public Guid UserId { get; set; }
+        public int RoleId { get; set; }
+        public int? BranchId { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
+        public string FullName { get; set; }
+        public DateTime Dob { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
+        public DateTime CreateTime { get; set; }
+        public DateTime? UpdateTime { get; set; }
+        public int Status { get; set; }
 
         //relationship
-        //public Guid RoleId { get; set; }
-        //public Guid branchId { get; set; }
-        //public Role role { get; set; }
-        //public Branch branch { get; set; }
+
+
+
+        public virtual Role Role { get; set; }
+        public virtual Branch? Branch { get; set; }
+        
+
+
     }
 }
