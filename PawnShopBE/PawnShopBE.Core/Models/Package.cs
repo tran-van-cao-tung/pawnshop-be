@@ -18,7 +18,7 @@ namespace PawnShopBE.Core.Models
         public int PunishDay2 { get; set; }
         public int LiquitationDay { get; set; }
 
-        public ICollection<Contract>? Contracts { get; set; }
+        public ICollection<Contract> Contracts { get; set; }
         public Package()
         {
             Contracts = new List<Contract>();

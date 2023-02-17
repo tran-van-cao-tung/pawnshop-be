@@ -28,7 +28,7 @@ namespace PawnShopBE.Core.Models
         public DateTime? UpdateDate { get; set; }
         public int Status { get; set; }
 
-
+        
         public virtual Customer Customer { get; set; }
         public virtual Package Package { get; set; }
         public virtual Branch Branch { get; set; }

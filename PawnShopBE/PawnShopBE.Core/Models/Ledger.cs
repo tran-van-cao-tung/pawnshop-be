@@ -16,7 +16,7 @@ namespace PawnShopBE.Core.Models
         public DateTime FromDate { get; set; }
         public DateTime ToDate { get; set; }
         public int Status { get; set; }
-
+        public int BranchId { get; set; }
 
         public virtual Branch Branch { get; set; }
     }

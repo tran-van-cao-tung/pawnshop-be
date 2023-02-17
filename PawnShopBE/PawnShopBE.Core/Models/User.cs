@@ -13,7 +13,7 @@ namespace PawnShopBE.Core.Models
     {
         public Guid UserId { get; set; }
         public int RoleId { get; set; }
-        public int? BranchId { get; set; }
+        public int BranchId { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
@@ -25,11 +25,8 @@ namespace PawnShopBE.Core.Models
         public int Status { get; set; }
 
         //relationship
-
-
-
         public virtual Role Role { get; set; }
-        public virtual Branch? Branch { get; set; }
+        public virtual Branch Branch { get; set; }
         
 
 

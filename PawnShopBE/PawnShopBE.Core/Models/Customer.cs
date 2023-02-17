@@ -19,14 +19,17 @@ namespace PawnShopBE.Core.Models
         public int Status { get; set; }
         public int Point { get; set; }
 
+        public Kyc Kyc { get; set; }
         public ICollection<Contract> Contracts { get; set; }
         public ICollection<DependentPeople> DependentPeople { get; set; }
         public ICollection<Job> Jobs { get; set; }
+        public ICollection<CustomerRelativeRelationship> CustomerRelativeRelationships { get; set; }
         public Customer()
         {
             Contracts = new List<Contract>();
             DependentPeople = new List<DependentPeople>();
             Jobs = new List<Job>();
+            CustomerRelativeRelationships =new List<CustomerRelativeRelationship>();
         }
     }
 }

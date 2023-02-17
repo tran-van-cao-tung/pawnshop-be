@@ -22,9 +22,9 @@ namespace PawnShopBE.Core.Models
 
         //relationship
 
-        public ICollection<User>? Users { get; set; }
-        public ICollection<Contract>? Contracts { get; set; }
-        public ICollection<Ledger>? Ledgers { get; set; }
+        public ICollection<User> Users { get; set; }
+        public ICollection<Contract> Contracts { get; set; }
+        public ICollection<Ledger> Ledgers { get; set; }
         public Branch()
         {
             Users = new List<User>();

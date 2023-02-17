@@ -9,11 +9,11 @@ namespace PawnShopBE.Core.Models
     public class Job
     {
         public int JobId { get; set; }
-        public int CustomerId { get; set; }
+        public Guid CustomerId { get; set; }
         public string WorkLocation { get; set; }
         public decimal Salary { get; set; }
         public bool IsWork { get; set; }
-        public string LaborContract { get; set; }
+        public string? LaborContract { get; set; }
 
         
         public virtual Customer Customer { get; set; }
