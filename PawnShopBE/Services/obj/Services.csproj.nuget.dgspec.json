@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj": {}
+    "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj": {}
   },
   "projects": {
-    "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
+    "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
         "projectName": "PawnShopBE.Core",
-        "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\obj\\",
+        "projectPath": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj",
+        "packagesPath": "C:\\Users\\Nguye\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,24 +60,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj": {
+    "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj",
         "projectName": "PawnShopBE.Infrastructure",
-        "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Nguye\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -85,14 +86,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
-                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj"
+              "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
+                "projectPath": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj"
               }
             }
           }
@@ -148,24 +150,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj": {
+    "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\Services\\obj\\",
+        "projectPath": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\Nguye\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -174,17 +176,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
-                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj"
+              "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj": {
+                "projectPath": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Core\\PawnShopBE.Core.csproj"
               },
-              "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj": {
-                "projectPath": "F:\\pawnshop\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj"
+              "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Nguye\\Documents\\GitHub\\pawnshop-be\\PawnShopBE\\PawnShopBE.Infrastructure\\PawnShopBE.Infrastructure.csproj"
               }
             }
           }
@@ -214,7 +217,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
