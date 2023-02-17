@@ -30,8 +30,8 @@ namespace PawnShopBE.Controllers
         [HttpPost("Login")]
         public async Task<IActionResult> Validate(Login login)
         {
-            var user= _context.User.SingleOrDefault(p => p.userName == login.userName &&
-            p.password== login.password);
+            var user= _context.User.SingleOrDefault(p => p.UserName == login.userName &&
+            p.Password== login.password);
             if(user == null)
             {
                 return Ok(Response(false,"Invalid UserName or Password",null));
@@ -49,11 +49,11 @@ namespace PawnShopBE.Controllers
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-                    new Claim(ClaimTypes.Email,user.email),
-                    new Claim(ClaimTypes.Name, user.fullName),
+                    new Claim(ClaimTypes.Email,user.Email),
+                    new Claim(ClaimTypes.Name, user.FullName),
                     new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
-                    new Claim("UserName",user.userName),
-                    new Claim("Id", user.userId.ToString()),
+                    new Claim("UserName",user.UserName),
+                    new Claim("Id", user.UserId.ToString()),
                 }),
 
                 Expires= DateTime.UtcNow.AddMinutes(1),
@@ -69,7 +69,7 @@ namespace PawnShopBE.Controllers
             var refeshTokenEntity = new RefeshToken
             {
                 Id = Guid.NewGuid(),
-                UserId = user.userId,
+                UserId = user.UserId,
                 JwtID = token.Id,
                 Token = resfulToken,
                 IsUsed = false,
@@ -147,7 +147,7 @@ namespace PawnShopBE.Controllers
 
 
                 // check 4: refeshToken exist in db
-                var storedToken = _context.RefeshToken.FirstOrDefault(x => x.Token
+                var storedToken = _context.RefeshTokens.FirstOrDefault(x => x.Token
                 == tokenModel.RefeshToken);
                 if(storedToken == null)
                 {
@@ -179,7 +179,7 @@ namespace PawnShopBE.Controllers
                 await _context.SaveChangesAsync();
 
                 //create new Token
-                var user = await _context.User.SingleOrDefaultAsync(us => us.userId ==
+                var user = await _context.User.SingleOrDefaultAsync(us => us.UserId ==
                 storedToken.UserId);
                 var token = await Generate(user);
 
