@@ -17,6 +17,34 @@ namespace PawnShopBE.Infrastructure.Repositories
 
         public IRoleRepository Roles { get; }
 
+        public ILedgerRepository Ledgers => throw new NotImplementedException();
+
+        public IInterestDiaryRepository InterestDiaries => throw new NotImplementedException();
+
+        public IContractRepository Contracts => throw new NotImplementedException();
+
+        public IKycRepository Kycs => throw new NotImplementedException();
+
+        public IPackageRepository Packages => throw new NotImplementedException();
+
+        public ILiquidationRepository Liquidations => throw new NotImplementedException();
+
+        public ICustomerRepository Customers => throw new NotImplementedException();
+
+        public IContractAssetRepository ContractAssets => throw new NotImplementedException();
+
+        public IPawnableProductRepository PawnableProduct => throw new NotImplementedException();
+
+        public IAttributeRepository Attributes => throw new NotImplementedException();
+
+        public IWarehouseRepository Warehouses => throw new NotImplementedException();
+
+        public IDependentPeopleRepository DependentPeople => throw new NotImplementedException();
+
+        public IJobRepository Jobs => throw new NotImplementedException();
+
+        public ICustomerRelativeRelationshipRepository CustomersRelativeRelationships => throw new NotImplementedException();
+
         public UnitOfWork(  DbContextClass dbContext,
                             IUserRepository userRepository, 
                             IBranchRepository branchRepository,

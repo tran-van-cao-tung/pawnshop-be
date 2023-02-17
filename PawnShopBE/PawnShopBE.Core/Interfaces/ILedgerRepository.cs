@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PawnShopBE.Core.Interfaces
 {
-    public interface ILedgerRepository : IGenericRepository<Attribute>
+    public interface ILedgerRepository : IGenericRepository<Ledger>
     {
     }
 }

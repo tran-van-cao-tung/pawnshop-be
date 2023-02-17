@@ -19,6 +19,7 @@ namespace PawnShopBE.Infrastructure.Helpers
         public DbSet<User> User { get; set; }
         public DbSet<Branch> Branch { get; set; }
         public DbSet<Role> Role { get; set; }
+
         #endregion
 
         
