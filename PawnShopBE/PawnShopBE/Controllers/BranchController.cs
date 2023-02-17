@@ -64,14 +64,16 @@ namespace PawnShopBE.Controllers
         [HttpPut("branch/{id}")]
         public async Task<IActionResult> UpdateBranch(int id, BranchDTO request)
         {
-            request.BranchId = id;
-            var branch = _mapper.Map<Branch>(request);
-            var response = await _branchService.UpdateBranch(branch);
+            if (id == request.BranchId)
+            {
+                var branch = _mapper.Map<Branch>(request);
+                var response = await _branchService.UpdateBranch(branch);
                 if (response)
                 {
                     return Ok(response);
                 }
-                return BadRequest();            
+            }
+            return BadRequest();
         }
 
         [HttpDelete("branch/{id}")]
