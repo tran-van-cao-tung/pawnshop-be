@@ -64,9 +64,9 @@ namespace PawnShopBE.Controllers
         [HttpPut("user/{id:guid}")]
         public async Task<IActionResult> UpdateUser(Guid id, UserDTO request)
         {
-            if (request != null)
+          
+            if (request != null && request.UserId == id)
             {
-                request.UserId = id;
                 var user = _mapper.Map<User>(request);
                 var response = await _userService.UpdateUser(user);
                 if (response)
