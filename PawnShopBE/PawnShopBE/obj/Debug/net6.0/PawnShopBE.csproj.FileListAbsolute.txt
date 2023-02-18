@@ -120,6 +120,7 @@ F:\pawnshop\pawnshop-be\PawnShopBE\PawnShopBE\bin\Debug\net6.0\Humanizer.dll
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShopBE\bin\Debug\net6.0\K4os.Compression.LZ4.dll
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShopBE\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShopBE\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+F:\pawnshop\pawnshop-be\PawnShopBE\PawnShopBE\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShopBE\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShopBE\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 F:\pawnshop\pawnshop-be\PawnShopBE\PawnShopBE\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
