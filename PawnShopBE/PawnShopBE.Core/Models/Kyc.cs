@@ -13,6 +13,6 @@ namespace PawnShopBE.Core.Models
         public string IdentityCardBacking { get; set; }
         public string FaceImg { get; set; }
 
-        public virtual Guid CustomerId { get; set; }
+        public virtual  Customer Customer { get; set; }
     }
 }
