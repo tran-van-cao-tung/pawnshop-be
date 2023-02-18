@@ -9,6 +9,7 @@ namespace PawnShopBE.Core.Models
     public class Ledger
     {
         public int LedgerId { get; set; }
+        public int BranchId { get; set; }
         public decimal ReceivedPrincipal { get; set; }
         public decimal RecveivedInterest { get; set; }
         public decimal Loan { get; set; }

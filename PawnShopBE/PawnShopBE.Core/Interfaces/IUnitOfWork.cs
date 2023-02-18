@@ -11,6 +11,20 @@ namespace PawnShopBE.Core.Interfaces
         IUserRepository Users { get; }
         IBranchRepository Branches { get; }
         IRoleRepository Roles { get; }
+        ILedgerRepository Ledgers { get; }
+        IInterestDiaryRepository InterestDiaries { get; }
+        IContractRepository Contracts { get; }
+        IKycRepository Kycs { get; }
+        IPackageRepository Packages { get; }
+        ILiquidationRepository Liquidations { get; }
+        ICustomerRepository Customers { get; }
+        IContractAssetRepository ContractAssets { get; }
+        IPawnableProductRepository PawnableProduct { get; }
+        IAttributeRepository Attributes { get; }
+        IWarehouseRepository Warehouses { get; }
+        IDependentPeopleRepository DependentPeople { get; }
+        IJobRepository Jobs { get; }
+        ICustomerRelativeRelationshipRepository CustomersRelativeRelationships { get; }
         int Save();
     }
 }

@@ -12,6 +12,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace PawnShopBE.Controllers
 {
     [Route("api/authentication")]
