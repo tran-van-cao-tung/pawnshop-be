@@ -42,6 +42,7 @@ namespace PawnShopBE.Controllers
                 return BadRequest(Response(true, "Authentication Success", token));
         }
 
+        [HttpGet]
         private  async Task<TokenModel> Generate(User user)
         {
             var jwtToken = new JwtSecurityTokenHandler();
@@ -88,7 +89,7 @@ namespace PawnShopBE.Controllers
                 RefeshToken = resfulToken
             };
         }
-
+        [HttpGet]
         private string GenerateRefeshToken()
         {
             var random = new Byte[32];
@@ -100,7 +101,7 @@ namespace PawnShopBE.Controllers
             }
         }
 
-        //Renew AccessToken
+        [HttpGet] //Renew AccessToken
         public async Task<IActionResult> RenewToken(TokenModel tokenModel)
         {
             var jwtToken = new JwtSecurityTokenHandler();
@@ -191,6 +192,7 @@ namespace PawnShopBE.Controllers
                 return Ok(Response(false, "Something Went Wrong", null));
             }
         }
+        [HttpGet]
         private DateTime ConverUrnixTimeToDateTime(long utcExpireDate)
         {
             var dateTimeInterval = new DateTime(1980, 1, 1, 0, 0, 0, DateTimeKind.Utc);
@@ -198,9 +200,9 @@ namespace PawnShopBE.Controllers
             return dateTimeInterval;
         }
 
-        //Respon Authentication, Status
-        private ApiRespon Response(bool success, string message,object? data) {
-            return new ApiRespon
+        [HttpGet] //Respon Authentication, Status
+        private ApiRespone Response(bool success, string message,object? data) {
+            return new ApiRespone
             {
                 Success = success,
                 Message = message,

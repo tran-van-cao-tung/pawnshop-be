@@ -11,7 +11,7 @@ namespace PawnShopBE.Core.Models
         public int PackageId { get; set; }
         public string PackageName { get; set; }
         public int PackageInterest { get; set; }
-        public string PaymentPeriod { get; set; }
+        public int PaymentPeriod { get; set; }
         public int Day { get; set; }
         public int Limitation { get; set; }
         public int PunishDay1 { get; set; }

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PawnShopBE.Core.Const;
 using PawnShopBE.Core.DTOs;
 using PawnShopBE.Core.Models;
 using Services.Services.IServices;
@@ -12,16 +13,23 @@ namespace PawnShopBE.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly IRoleService _roleService;
         private readonly IMapper _mapper;
-        public UserController(IUserService userService, IMapper mapper)
+        public UserController(IUserService userService,IRoleService roleService, IMapper mapper)
         {
             _userService = userService;
+            _roleService = roleService;
             _mapper = mapper;
         }
 
         [HttpPost("user")]
         public async Task<IActionResult> CreateUser(UserDTO request)
         {
+
+
+            //Role role = await _roleService.GetRole((int)RoleConst.Staff);
+            //RoleDTO roleDTO = _mapper.Map<RoleDTO>(role);
+            //request.RoleDTO = roleDTO;
             var user = _mapper.Map<User>(request);
             var response = await _userService.CreateUser(user);
 
