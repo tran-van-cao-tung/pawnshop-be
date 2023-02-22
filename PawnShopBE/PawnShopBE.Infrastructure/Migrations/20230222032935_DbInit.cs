@@ -53,7 +53,7 @@ namespace PawnShopBE.Infrastructure.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PackageName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PackageInterest = table.Column<int>(type: "int", nullable: false),
-                    PaymentPeriod = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PaymentPeriod = table.Column<int>(type: "int", nullable: false),
                     Day = table.Column<int>(type: "int", nullable: false),
                     Limitation = table.Column<int>(type: "int", nullable: false),
                     PunishDay1 = table.Column<int>(type: "int", nullable: false),

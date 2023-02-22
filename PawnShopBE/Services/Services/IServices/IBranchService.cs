@@ -10,14 +10,14 @@ namespace Services.Services.IServices
 {
     public interface IBranchService
     {
-        Task<bool> CreateBranch(Branch Branch);
+        Task<bool> CreateBranch(Branch branch);
 
         Task<IEnumerable<Branch>> GetAllBranch();
 
-        Task<Branch> GetBranchById(int BranchId);
+        Task<Branch> GetBranchById(int branchId);
 
-        Task<bool> UpdateBranch(Branch Branch);
+        Task<bool> UpdateBranch(Branch branch);
 
-        Task<bool> DeleteBranch(int BranchId);
+        Task<bool> DeleteBranch(int branchId);  
     }
 }

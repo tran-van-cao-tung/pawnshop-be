@@ -12,5 +12,6 @@ namespace Services.Services.IServices
         Task<bool> CreateRole(Role role);
 
         Task<bool> DeleteRole(int roleId);
+        Task<Role> GetRole(int roleId);
     }
 }
