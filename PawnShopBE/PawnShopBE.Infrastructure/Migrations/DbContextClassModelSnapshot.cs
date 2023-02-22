@@ -517,9 +517,8 @@ namespace PawnShopBE.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PaymentPeriod")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("PaymentPeriod")
+                        .HasColumnType("int");
 
                     b.Property<int>("PunishDay1")
                         .HasColumnType("int");

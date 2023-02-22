@@ -17,44 +17,71 @@ namespace PawnShopBE.Infrastructure.Repositories
 
         public IRoleRepository Roles { get; }
 
-        public ILedgerRepository Ledgers => throw new NotImplementedException();
+        public ILedgerRepository Ledgers { get; }
 
-        public IInterestDiaryRepository InterestDiaries => throw new NotImplementedException();
+        public IInterestDiaryRepository InterestDiaries { get; }
 
-        public IContractRepository Contracts => throw new NotImplementedException();
+        public IContractRepository Contracts { get; }
 
-        public IKycRepository Kycs => throw new NotImplementedException();
+        public IKycRepository Kycs { get; }
 
-        public IPackageRepository Packages => throw new NotImplementedException();
+        public IPackageRepository Packages { get; }
 
-        public ILiquidationRepository Liquidations => throw new NotImplementedException();
+        public ILiquidationRepository Liquidations { get; }
 
-        public ICustomerRepository Customers => throw new NotImplementedException();
+        public ICustomerRepository Customers { get; }
 
-        public IContractAssetRepository ContractAssets => throw new NotImplementedException();
+        public IContractAssetRepository ContractAssets { get; }
 
-        public IPawnableProductRepository PawnableProduct => throw new NotImplementedException();
+        public IPawnableProductRepository PawnableProduct { get; }
 
-        public IAttributeRepository Attributes => throw new NotImplementedException();
+        public IAttributeRepository Attributes { get; }
 
-        public IWarehouseRepository Warehouses => throw new NotImplementedException();
+        public IWarehouseRepository Warehouses { get; }
 
-        public IDependentPeopleRepository DependentPeople => throw new NotImplementedException();
+        public IDependentPeopleRepository DependentPeople { get; }
 
-        public IJobRepository Jobs => throw new NotImplementedException();
+        public IJobRepository Jobs { get; }
 
-        public ICustomerRelativeRelationshipRepository CustomersRelativeRelationships => throw new NotImplementedException();
+        public ICustomerRelativeRelationshipRepository CustomersRelativeRelationships { get; }
 
         public UnitOfWork(  DbContextClass dbContext,
                             IUserRepository userRepository, 
                             IBranchRepository branchRepository,
-                            IRoleRepository roleRepository)
+                            IRoleRepository roleRepository,
+        ILedgerRepository ledgerRepository,
+        IInterestDiaryRepository interestDiaryRepository,
+        IContractRepository contractRepository,
+        IKycRepository kycRepository,
+        IPackageRepository packageRepository,
+        ILiquidationRepository liquidationRepository,
+        ICustomerRepository customerRepository,
+        IContractAssetRepository contractAssetRepository,
+        IPawnableProductRepository pawnableProductRepository,
+        IAttributeRepository attributeRepository,
+        IWarehouseRepository warehouseRepository,
+        IDependentPeopleRepository dependentPeopleRepository,
+        IJobRepository jobRepository,
+        ICustomerRelativeRelationshipRepository customerRelativeRelationshipRepository)
         {
             _dbContext = dbContext;
             Users = userRepository;
             Branches = branchRepository;
             Roles = roleRepository;
-
+            Ledgers = ledgerRepository;
+            InterestDiaries = interestDiaryRepository;
+            Contracts = contractRepository;
+            Kycs = kycRepository;
+            Packages = packageRepository;
+            Liquidations = liquidationRepository;
+            Customers = customerRepository;
+            ContractAssets = contractAssetRepository;
+            PawnableProduct = pawnableProductRepository;
+            Attributes = attributeRepository;
+            Warehouses = warehouseRepository;
+            DependentPeople = dependentPeopleRepository;
+            Jobs = jobRepository;
+            CustomersRelativeRelationships = customerRelativeRelationshipRepository;
         }
 
      

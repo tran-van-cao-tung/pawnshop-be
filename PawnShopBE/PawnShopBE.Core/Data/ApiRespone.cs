@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PawnShopBE.Core.Data
 {
-    public class ApiRespon
+    public class ApiRespone
     {
         public bool Success { get; set; }
         public string Message { get; set; }

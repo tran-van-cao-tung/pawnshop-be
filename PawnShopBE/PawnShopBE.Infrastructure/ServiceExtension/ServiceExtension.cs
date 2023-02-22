@@ -24,6 +24,21 @@ namespace PawnShopBE.Infrastructure.ServiceExtension
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IBranchRepository, BranchRepository>();
             services.AddScoped<IRoleRepository,RoleRepository>();
+            services.AddScoped<IContractRepository, ContractRepository>();
+            services.AddScoped<IContractAssetRepository, ContractAssetRepository>();
+            services.AddScoped<IAttributeRepository, AttributeRepository>();
+            services.AddScoped<ICustomerRelativeRelationshipRepository, CustomerRelativeRelationshipRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IDependentPeopleRepository, DependentPeopleRepository>();
+            services.AddScoped<IInterestDiaryRepository, InterestDiaryRepository>();
+            services.AddScoped<IJobRepository, JobRepository>();
+            services.AddScoped<IKycRepository, KycRepository>();
+            services.AddScoped<ILedgerRepository, LedgerRepository>();
+            services.AddScoped<ILiquidationRepository, LiquidationRepository>();
+            services.AddScoped<IPackageRepository, PackageRepository>();
+            services.AddScoped<IPawnableProductRepository, PawnableProductRepository>();
+            services.AddScoped<IWarehouseRepository, WarehouseRepository>();
+
             return services;
         }
     }

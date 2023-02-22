@@ -12,7 +12,7 @@ using PawnShopBE.Infrastructure.Helpers;
 namespace PawnShopBE.Infrastructure.Migrations
 {
     [DbContext(typeof(DbContextClass))]
-    [Migration("20230218070032_DbInit")]
+    [Migration("20230222032935_DbInit")]
     partial class DbInit
     {
         /// <inheritdoc />
@@ -520,9 +520,8 @@ namespace PawnShopBE.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PaymentPeriod")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("PaymentPeriod")
+                        .HasColumnType("int");
 
                     b.Property<int>("PunishDay1")
                         .HasColumnType("int");
