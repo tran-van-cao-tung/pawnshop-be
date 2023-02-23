@@ -1,4 +1,5 @@
-﻿using PawnShopBE.Core.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using PawnShopBE.Core.Interfaces;
 using PawnShopBE.Core.Models;
 using PawnShopBE.Infrastructure.Helpers;
 using System;
@@ -16,5 +17,11 @@ namespace PawnShopBE.Infrastructure.Repositories
 
         }
 
+        public async Task<List<Core.Models.Attribute>> GetAttributesByPawnableId(int pawmableProductId)
+        {
+            return await _dbContext.Attribute
+                    .Where(p => p.PawnableProductId == pawmableProductId)
+                    .ToListAsync();
+        }
     }
 }

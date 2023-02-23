@@ -7,6 +7,7 @@ using Services.Services.IServices;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using PawnShopBE.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 //Add Authentication
@@ -38,7 +39,11 @@ builder.Services.AddScoped<IBranchService, BranchService>();
 builder.Services.AddScoped<IContractService, ContractService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IPackageService, PackageService>();
-builder.Services.AddAutoMapper(typeof(Program).Assembly);
+builder.Services.AddScoped<IPawnableProductService, PawnableProductService>();
+builder.Services.AddScoped<IAttributeService, AttributeService>();
+builder.Services.AddScoped<IContractAssetService, ContractAssetService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -12,9 +12,8 @@ namespace PawnShopBE.Core.Interfaces
         Task<T> GetById(int id);
         Task<IEnumerable<T>> GetAll();
         Task Add(T entity);
+        Task AddList(IEnumerable<T> entities);
         void Delete(T entity);
         void Update(T entity);
-
-        
     }
 }

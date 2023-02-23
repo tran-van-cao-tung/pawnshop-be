@@ -10,14 +10,7 @@ namespace Services.Services.IServices
 {
     public interface IAttributeService
     {
-        Task<bool> CreateAttribute(Attribute branch);
-
-        Task<IEnumerable<Branch>> GetAllBranch();
-
-        Task<Branch> GetBranchById(int branchId);
-
-        Task<bool> UpdateBranch(Branch branch);
-
-        Task<bool> DeleteBranch(int branchId);
+        Task<bool> CreateAttribute(ICollection<Attribute> attributes);
+        Task<IEnumerable<Attribute>> GetAttributeByPawnableId(int pawnableProductId);
     }
 }

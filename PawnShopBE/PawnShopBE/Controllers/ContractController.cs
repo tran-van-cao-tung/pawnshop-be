@@ -13,6 +13,10 @@ namespace PawnShopBE.Controllers
     public class ContractController : ControllerBase
     {
         private readonly IContractService _contractService;
+        private readonly ICustomerService _customerService;
+        private readonly IContractAssetService _contractAssetService;
+        private readonly IPackageService _packageService;
+
         private readonly IMapper _mapper;
 
         public ContractController(IContractService contractService, IMapper mapper)

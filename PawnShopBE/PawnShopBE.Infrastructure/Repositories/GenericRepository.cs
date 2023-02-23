@@ -47,5 +47,10 @@ namespace PawnShopBE.Infrastructure.Repositories
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }
+
+        public async Task AddList(IEnumerable<T> entities)
+        {
+            await _dbContext.Set<T>().AddRangeAsync(entities);
+        }      
     }
 }
