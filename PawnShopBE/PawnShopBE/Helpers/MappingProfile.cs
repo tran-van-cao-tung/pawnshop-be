@@ -16,6 +16,7 @@ namespace PawnShopBE.Helpers
             CreateMap<Role, RoleDTO>().ReverseMap();
             CreateMap<Customer, CustomerDTO>().ReverseMap();
             CreateMap<Kyc,KycDTO>().ReverseMap();
+            CreateMap<Job, JobDTO>().ReverseMap();
         }
     }
 }
