@@ -25,8 +25,6 @@ namespace PawnShopBE.Controllers
         [HttpPost("user")]
         public async Task<IActionResult> CreateUser(UserDTO request)
         {
-
-
             //Role role = await _roleService.GetRole((int)RoleConst.Staff);
             //RoleDTO roleDTO = _mapper.Map<RoleDTO>(role);
             //request.RoleDTO = roleDTO;

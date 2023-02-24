@@ -14,6 +14,8 @@ namespace PawnShopBE.Helpers
         {
             // Mapping tu DTO sang entity
             CreateMap<Role, RoleDTO>().ReverseMap();
+            CreateMap<Customer, CustomerDTO>().ReverseMap();
+            CreateMap<Kyc,KycDTO>().ReverseMap();
         }
     }
 }

@@ -208,7 +208,7 @@ namespace PawnShopBE.Infrastructure.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Email")
+                    b.Property<string>("CCCD")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
