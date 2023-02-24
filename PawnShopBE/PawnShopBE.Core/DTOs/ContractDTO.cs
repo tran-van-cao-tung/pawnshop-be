@@ -9,8 +9,8 @@ namespace PawnShopBE.Core.DTOs
 {
     public class ContractDTO
     {
-        public int ContractId { get; set; }
-        public Guid CustomerId { get; set; }
+        public int? ContractId { get; set; }
+        public Guid? CustomerId { get; set; }
         public int PackageId { get; set; }
         public int BranchId { get; set; }
         public int ContractAssetId { get; set; }
