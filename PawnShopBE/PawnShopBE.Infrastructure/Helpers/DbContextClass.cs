@@ -113,12 +113,14 @@ namespace PawnShopBE.Infrastructure.Helpers
             {
                 entity.ToTable("PawnableProduct");
                 entity.HasKey(p => p.PawnableProductId);
+                //entity.Property(p => p.PawnableProductId).ValueGeneratedOnAdd();
             });
 
             modelBuilder.Entity<Attribute>(entity =>
             {
                 entity.ToTable("Attribute");
                 entity.HasKey(a => a.AttributeId);
+                //entity.Property(a => a.AttributeId).ValueGeneratedOnAdd();
                 entity.HasOne(a => a.PawnableProduct).WithMany(p => p.Attributes).HasForeignKey(a => a.PawnableProductId).IsRequired(true);
 
             });

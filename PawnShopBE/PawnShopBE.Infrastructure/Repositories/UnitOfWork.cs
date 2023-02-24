@@ -1,4 +1,6 @@
-﻿using PawnShopBE.Core.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
+using PawnShopBE.Core.Interfaces;
 using PawnShopBE.Infrastructure.Helpers;
 using System;
 using System.Collections.Generic;
@@ -91,10 +93,10 @@ namespace PawnShopBE.Infrastructure.Repositories
         }
 
         public void Dispose()
-        {
+          {
             Dispose(true);
             GC.SuppressFinalize(this);
-        }
+          }
 
         protected virtual void Dispose(bool disposing)
         {

@@ -9,5 +9,6 @@ namespace PawnShopBE.Core.Interfaces
 {
     public interface IAttributeRepository : IGenericRepository<Models.Attribute>
     {
+        public Task<List<Models.Attribute>> GetAttributesByPawnableId(int pawmableProductId);
     }
 }

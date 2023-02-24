@@ -36,7 +36,7 @@ namespace PawnShopBE.Controllers
         }
 
         [HttpGet("branches")]
-        public async Task<IActionResult> getBranchList()
+        public async Task<IActionResult> GetBranchList()
         {
             var branchList = await _branchService.GetAllBranch();
             if (branchList == null)
