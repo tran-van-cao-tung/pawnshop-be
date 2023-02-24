@@ -11,7 +11,7 @@ namespace PawnShopBE.Core.Models
         public Guid CustomerId { get; set; }
         public int KycId { get; set; }
         public string FullName { get; set; }
-        public string CCCD { get; set; }
+        public string IdentityCard { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
         public DateTime CreatedDate { get; set; }

@@ -9,8 +9,8 @@ namespace PawnShopBE.Core.DTOs
 {
     public class ContractDTO
     {
-        public int ContractId { get; set; }
-        public Guid CustomerId { get; set; }
+        public int? ContractId { get; set; }
+        public Guid? CustomerId { get; set; }
         public int PackageId { get; set; }
         public int BranchId { get; set; }
         public int ContractAssetId { get; set; }
@@ -27,17 +27,20 @@ namespace PawnShopBE.Core.DTOs
         public DateTime? UpdateDate { get; set; }
         public int Status { get; set; }
 
+        // Customer DTO
+        
+        public int KycId { get; set; }
+        public string FullName { get; set; }
+        public string Email { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public int Point { get; set; }
 
-        //public virtual Customer Customer { get; set; }
-        //public virtual Package Package { get; set; }
-        //public virtual Branch Branch { get; set; }
-        //public virtual ContractAsset ContractAsset { get; set; }
-        //public virtual Liquidtation Liquidtation { get; set; }
-        //public ICollection<InterestDiary> InterestDiaries { get; set; }
-        //public Contract()
-        //{
-        //    InterestDiaries = new List<InterestDiary>();
-        //}
+        // ContractAsset
+        // AttributeAsset
+        // PawnAbleAsset
+        // PackageAsset
 
     }
 }
