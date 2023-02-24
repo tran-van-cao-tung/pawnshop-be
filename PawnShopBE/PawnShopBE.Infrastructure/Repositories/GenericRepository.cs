@@ -52,5 +52,9 @@ namespace PawnShopBE.Infrastructure.Repositories
         {
             await _dbContext.Set<T>().AddRangeAsync(entities);
         }      
+        public T SingleOrDefault(T entity, Func<T,bool> function)
+        {
+            return _dbContext.Set<T>().SingleOrDefault(function);
+        }
     }
 }

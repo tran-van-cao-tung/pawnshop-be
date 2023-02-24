@@ -19,6 +19,8 @@ namespace PawnShopBE.Helpers
                     dest => dest.Attributes,
                     opt => opt.MapFrom(src => src.AttributeDTOs));
             
+            CreateMap<Customer, CustomerDTO>().ReverseMap();
+            CreateMap<Kyc,KycDTO>().ReverseMap();
         }
     }
 }

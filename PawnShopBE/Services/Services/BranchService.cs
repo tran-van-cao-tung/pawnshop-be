@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Services.Services
 {
-    public class BranchService : IBranchService 
+    public class BranchService : IBranchService
     {
-        
+
         public IUnitOfWork _unitOfWork;
 
         public BranchService(IUnitOfWork unitOfWork)
@@ -20,6 +20,7 @@ namespace Services.Services
             _unitOfWork = unitOfWork;
         }
 
+        
         public async Task<bool> CreateBranch(Branch branch)
         {
             if (branch != null)

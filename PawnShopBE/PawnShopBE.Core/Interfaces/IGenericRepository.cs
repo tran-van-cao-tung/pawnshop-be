@@ -15,5 +15,8 @@ namespace PawnShopBE.Core.Interfaces
         Task AddList(IEnumerable<T> entities);
         void Delete(T entity);
         void Update(T entity);
+        T SingleOrDefault(T entity, Func<T, bool> function);
+
+
     }
 }
