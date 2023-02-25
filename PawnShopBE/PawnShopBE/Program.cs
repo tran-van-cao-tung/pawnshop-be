@@ -7,7 +7,6 @@ using Services.Services.IServices;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using PawnShopBE.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 //Add Authentication
@@ -36,15 +35,20 @@ builder.Services.Configure<Appsetting>(builder.Configuration.GetSection("AppSett
 builder.Services.AddDIServices(builder.Configuration);
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IBranchService, BranchService>();
-builder.Services.AddScoped<IContractService, ContractService>();    
+builder.Services.AddScoped<IContractService, ContractService>();
+builder.Services.AddScoped<IDependentService, DependentService>();
+builder.Services.AddScoped<ICustomerRelativeService, CustomerRelativeService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
-builder.Services.AddScoped<IPackageService, PackageService>();
-builder.Services.AddScoped<IPawnableProductService, PawnableProductService>();
-builder.Services.AddScoped<IAttributeService, AttributeService>();
 builder.Services.AddScoped<IContractAssetService, ContractAssetService>();
-builder.Services.AddScoped<ICustomerService, CustomerService>();
-builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+builder.Services.AddScoped<IWareHouseService, WareHouseService>();
+builder.Services.AddScoped<IPackageService, PackageService>();
+builder.Services.AddScoped<IInteresDiaryService, InterestDiaryService>();
+builder.Services.AddScoped<ILiquidationService,LiquidationService>();
+builder.Services.AddScoped<IPawnableProductService, PawnableProductService>();
+builder.Services.AddScoped<ICustomerService,CustomerService>();
 builder.Services.AddScoped<IKycService, KycService>();
+builder.Services.AddScoped<IJobService, JobService>();
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

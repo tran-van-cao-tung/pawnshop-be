@@ -21,6 +21,13 @@ namespace PawnShopBE.Helpers
             
             CreateMap<Customer, CustomerDTO>().ReverseMap();
             CreateMap<Kyc,KycDTO>().ReverseMap();
+            CreateMap<Job, JobDTO>().ReverseMap();
+            CreateMap<Warehouse, WareHouseDTO>().ReverseMap();
+            CreateMap<LiquidationDTO,Liquidtation>().ReverseMap();
+            CreateMap<InterestDiary, InterestDiaryDTO>().ReverseMap();
+            CreateMap<ContractAsset, ContractAssetDTO>().ReverseMap();
+            CreateMap<DependentPeople, DependentPeopleDTO>().ReverseMap();
+            CreateMap<CustomerRelativeDTO, CustomerRelativeRelationship>().ReverseMap();
         }
     }
 }
