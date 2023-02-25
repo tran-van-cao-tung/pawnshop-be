@@ -53,7 +53,7 @@ namespace PawnShopBE.Controllers
         }
 
         [HttpPut("job/{id}")]
-        public async Task<IActionResult> UpdateJob(int id,Job job)
+        public async Task<IActionResult> UpdateJob(int id,JobDTO job)
         {
             var jobUpdate=_mapper.Map<Job>(job);
             jobUpdate.JobId = id;

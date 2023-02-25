@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,6 +14,7 @@ namespace Services.Services
     public class ContractAssetService : IContractAssetService
     {
         public IUnitOfWork _unitOfWork;
+        private readonly ContractAsset contractAsset;
 
         public ContractAssetService(IUnitOfWork unitOfWork)
         {
@@ -36,12 +38,24 @@ namespace Services.Services
 
         public async Task<bool> DeleteContractAsset(int contractAssetId)
         {
-            throw new NotImplementedException();
+            var contractAssetDelete = _unitOfWork.ContractAssets.SingleOrDefault
+                (contractAsset, j => j.ContractAssetId == contractAssetId);
+            if (contractAssetDelete != null)
+            {
+                _unitOfWork.ContractAssets.Delete(contractAssetDelete);
+                var result = _unitOfWork.Save();
+                if (result > 0)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public async Task<IEnumerable<ContractAsset>> GetAllContractAssets()
         {
-            throw new NotImplementedException();
+            var result = await _unitOfWork.ContractAssets.GetAll();
+            return result;
         } 
 
         public async Task<ContractAsset> GetContractAssetById(int contractAssetId)
@@ -51,7 +65,25 @@ namespace Services.Services
 
         public async Task<bool> UpdateContractAsset(ContractAsset contractAsset)
         {
-            throw new NotImplementedException();
+            var contractAssetUpdate = _unitOfWork.ContractAssets.SingleOrDefault
+                (contractAsset, j => j.ContractAssetId == contractAsset.ContractAssetId);
+            if (contractAssetUpdate != null)
+            {
+                contractAssetUpdate.ContractAssetName = contractAsset.ContractAssetName;
+                contractAssetUpdate.WarehouseId = contractAsset.WarehouseId;
+                contractAssetUpdate.PawnableProductId = contractAsset.PawnableProductId;
+                contractAssetUpdate.Description = contractAsset.Description;
+                contractAssetUpdate.Image = contractAsset.Image;
+                contractAssetUpdate.Status = contractAsset.Status;
+                contractAssetUpdate.SerialCode = contractAsset.SerialCode;
+                _unitOfWork.ContractAssets.Update(contractAssetUpdate);
+                var result = _unitOfWork.Save();
+                if (result > 0)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

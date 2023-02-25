@@ -35,9 +35,16 @@ builder.Services.Configure<Appsetting>(builder.Configuration.GetSection("AppSett
 builder.Services.AddDIServices(builder.Configuration);
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IBranchService, BranchService>();
-builder.Services.AddScoped<IContractService, ContractService>();    
+builder.Services.AddScoped<IContractService, ContractService>();
+builder.Services.AddScoped<IDependentService, DependentService>();
+builder.Services.AddScoped<ICustomerRelativeService, CustomerRelativeService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IContractAssetService, ContractAssetService>();
+builder.Services.AddScoped<IWareHouseService, WareHouseService>();
 builder.Services.AddScoped<IPackageService, PackageService>();
+builder.Services.AddScoped<IInteresDiaryService, InterestDiaryService>();
+builder.Services.AddScoped<ILiquidationService,LiquidationService>();
+builder.Services.AddScoped<IPawnableProductService, PawnableProductService>();
 builder.Services.AddScoped<ICustomerService,CustomerService>();
 builder.Services.AddScoped<IKycService, KycService>();
 builder.Services.AddScoped<IJobService, JobService>();

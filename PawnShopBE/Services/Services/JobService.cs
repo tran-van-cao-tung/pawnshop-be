@@ -33,7 +33,6 @@ namespace Services.Services
 
         public async Task<bool> DeleteJob(int JobId)
         {
-
            var jobDelete=  _unit.Jobs.SingleOrDefault(job,j=> j.JobId == JobId);
             if (jobDelete != null)
             {
